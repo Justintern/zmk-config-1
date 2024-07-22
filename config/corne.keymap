@@ -55,13 +55,12 @@
 // | BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |
 // |     |     |     |     |     |   |     |  7  |  8  |  9  |     |
 //                    | GUI |     | SPC |   | ENT |     | ALT |
-                        bindings = <
-//                                                                         |   
-   &trans     &kp N1       &kp N2       &kp N3       &kp N4       &kp N5         &kp N6   &kp N1 &kp N2 &kp N3 &kp N0       &trans
-   &trans     &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &kp LEFT &kp N4 &kp N5 &kp N6 &trans     &trans
-   &trans     &trans       &trans       &trans       &trans       &trans         &kp N0  &kp N7  &kp N8 &kp N9 &trans    &trans
-                                    &kp LGUI     &trans       &kp SPACE          &kp RET  &trans   &kp RALT
-                        >;
+		bindings = <
+		&trans		&kp ESC  &kp ATSN   &td LC(LG(LS(N4))) LS(N3) &kp DLLR    &kp PRCNT		&kp CARET &kp LS(COMMA) &kp LS(DOT) &kp SEMI &kp BKSP 		&trans
+		&trans		&kp TAB    &kp EQUAL    &kp LA(RBKT)      &kp LA(LS(RBKT))     &kp SQT 		&kp BSLH &kp LBRC  &kp RBRC &kp PIPE  &kp ENTER			&trans
+		&trans		&kp TILDE    &kp LA(N3) 	&kp LA(LBKT) &kp LA(LS(LBKT))  &kp DQT 	&kp LBKT &kp LPRN &kp RPRN &kp RBKT  &to 3 				&trans
+					&kp LGUI &to 0  &sk LSHIFT  					&kp ENTER &sk RALT &to 2 
+		>;
                 };
 
                 raise_layer {
